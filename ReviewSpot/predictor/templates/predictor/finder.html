@@ -68,22 +68,13 @@
 <main role="main" class="container">
     <br><br><br><br><br>
     <br><br><br><br><br>
-    
-    <form method="POST" action="{% url 'finder' %}">
-      {% csrf_token %}
+    <br><br><br><br><br>
+
   <div class="starter-template" align="center">
-    <h1>Enter Your Text Below!</h1><br>
-
-    <div class="form-floating">
-  
-      <textarea class="form-control" placeholder="Leave your review here..." id="floatingTextarea2" name= "review" style="height: 200px"></textarea>
-      <br>
-      <input class='btn btn-primary' type='submit' value='Predict'>  
-</div>
-
-  </form>
-    
-    
+    <h1>Here's Your Result</h1><br>
+    <p class="lead">Your Review is: {{rev}}</p><br>
+    <p class="lead">Result: {{msg}}</p><br>
+    <a type="button" class="btn btn-primary" href="{% url 'pred' %}">Try Again</a>
   </div>
 
   

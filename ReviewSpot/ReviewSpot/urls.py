@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('predict', views.pred, name='pred'),
+    path('finder', views.find, name='finder'),
 ]
