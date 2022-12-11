@@ -47,7 +47,7 @@ def find(request):
         if (predict==1):
             st = "The Given review is a Positive Review"
         else:
-            st = "The Given review is a Positive Review"
+            st = "The Given review is a Negative Review"
         
         print(st)
 
